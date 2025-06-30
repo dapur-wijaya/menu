@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Catering Dapur Wijaya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    header {
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+    .fallback {
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+
+    /* WhatsApp Button */
+    .wa-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .wa-button img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Menu Catering Dapur Wijaya</h1>
+  </header>
+
+  <iframe src="menu.pdf" type="application/pdf">
+    PDF tidak dapat ditampilkan.
+  </iframe>
+
+  <div class="fallback">
+    <p>Jika Menu tidak muncul, klik tombol berikut:</p>
+    <a href="menu.pdf" target="_blank" class="btn">Lihat PDF</a>
+    <a href="menu.pdf" download class="btn">Unduh PDF</a>
+  </div>
+
+  <!-- WhatsApp Contact Button -->
+  <a href="https://wa.me/6287854309858" target="_blank" class="wa-button" title="Hubungi via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+  </a>
+
+</body>
+</html>
